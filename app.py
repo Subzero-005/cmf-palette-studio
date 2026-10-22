@@ -39,6 +39,12 @@ with gr.Blocks(title="CMF Palette Studio") as demo:
             colours_per_image = gr.Slider(2, 10, value=5, step=1, label="Colours per image")
             board_colours = gr.Slider(3, 10, value=6, step=1, label="Colours on board")
             run = gr.Button("Build board", variant="primary")
+            gr.Examples(
+                [[["examples/graphite-orange.jpg", "examples/white-petrol.jpg", "examples/olive-sand.jpg"],
+                  "Urban Scooter – Colour Exploration"]],
+                [files, title],
+                label="Try with sample images",
+            )
         with gr.Column(scale=2):
             board = gr.Image(label="Board", type="pil")
             table = gr.Dataframe(headers=["Hex", "Name", "Share", "Finish hint"], label="Palette")
