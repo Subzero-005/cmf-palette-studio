@@ -1,6 +1,7 @@
 # CMF Palette Studio
 
 **▶ [Try it live in your browser](https://subzero-005.github.io/cmf/)** (no install needed, and images never leave your device)
+
 **Turn a pile of reference photos into a colour board in seconds.**
 
 ![Example board](examples/board.png)
